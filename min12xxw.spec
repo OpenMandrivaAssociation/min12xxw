@@ -1,14 +1,14 @@
 Summary:	A printer filter for Minolta 1[234]xx W printers
 Name:		min12xxw
 Version:	0.0.9
-Release:	%mkrel 2
+Release:	%mkrel 3
 Copyright:	GPL
 Group:		System/Printing
 URL:		http://www.hinterbergen.de/mala/min12xxw/
 Source0:	http://www.hinterbergen.de/mala/min12xxw/%{name}-%{version}.tar.gz
 BuildRequires:	gettext-devel
-Conflicts:	printer-utils-2006 printer-utils-2007
-Conflicts:	printer-filters-2006 printer-filters-2007
+Conflicts:	printer-utils = 2007
+Conflicts:	printer-filters = 2007
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
