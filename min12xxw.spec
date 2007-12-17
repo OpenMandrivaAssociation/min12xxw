@@ -9,7 +9,6 @@ Source0:	http://www.hinterbergen.de/mala/min12xxw/%{name}-%{version}.tar.gz
 BuildRequires:	gettext-devel
 Conflicts:	printer-utils = 2007
 Conflicts:	printer-filters = 2007
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 This is min12xxw, a filter to convert pbmraw data such as produced by
