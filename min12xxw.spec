@@ -1,11 +1,12 @@
 Summary:	A printer filter for Minolta 1[234]xx W printers
 Name:		min12xxw
 Version:	0.0.9
-Release:	%mkrel 7
+Release:	%mkrel 9
 License:	GPL
 Group:		System/Printing
 URL:		http://www.hinterbergen.de/mala/min12xxw/
 Source0:	http://www.hinterbergen.de/mala/min12xxw/%{name}-%{version}.tar.gz
+Patch0:		min12xxw-0.0.9-format_not_a_string_literal_and_no_format_arguments.diff
 BuildRequires:	gettext-devel
 Conflicts:	printer-utils = 2007
 Conflicts:	printer-filters = 2007
@@ -18,7 +19,7 @@ ghostscript to the printer language of Minolta 1[234]xx W printers.
 %prep
 
 %setup -q
-
+%patch0 -p0 -b .format_not_a_string_literal_and_no_format_arguments
 %build
 
 %configure2_5x
