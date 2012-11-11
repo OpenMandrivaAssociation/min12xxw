@@ -1,0 +1,11 @@
+--- min12xxw.c	2005-12-31 14:50:48.000000000 +0100
++++ min12xxw.c.oden	2008-12-25 19:54:40.000000000 +0100
+@@ -725,7 +725,7 @@ static void printav(char *msg, struct ma
+ {
+ 	int i, n;
+ 	
+-	n = printf(msg);
++	n = printf("%s", msg);
+ 	/* print all available somethings from our map */
+ 	for (i = 0; m[i].str != NULL; i++) {
+ 		/* in case we had to start a new line below, we need to
