@@ -1,7 +1,7 @@
 Summary:	A printer filter for Minolta 1[234]xx W printers
 Name:		min12xxw
 Version:	0.0.9
-Release:	%mkrel 13
+Release:	%mkrel 15
 License:	GPL
 Group:		System/Printing
 URL:		http://www.hinterbergen.de/mala/min12xxw/
@@ -40,3 +40,57 @@ rm -rf %{buildroot}
 %attr(0755,root,root) %{_bindir}/esc-m
 %attr(0755,root,root) %{_bindir}/min12xxw
 %attr(0644,root,root) %{_mandir}/man1/*
+
+
+%changelog
+* Wed May 04 2011 Oden Eriksson <oeriksson@mandriva.com> 0.0.9-13mdv2011.0
++ Revision: 666427
+- mass rebuild
+
+* Fri Dec 03 2010 Oden Eriksson <oeriksson@mandriva.com> 0.0.9-12mdv2011.0
++ Revision: 606644
+- rebuild
+
+* Mon Mar 15 2010 Oden Eriksson <oeriksson@mandriva.com> 0.0.9-11mdv2010.1
++ Revision: 520170
+- rebuilt for 2010.1
+
+* Thu Sep 03 2009 Christophe Fergeau <cfergeau@mandriva.com> 0.0.9-10mdv2010.0
++ Revision: 426128
+- rebuild
+
+* Thu Dec 25 2008 Oden Eriksson <oeriksson@mandriva.com> 0.0.9-9mdv2009.1
++ Revision: 319038
+- fix build with -Werror=format-security (P0)
+
+* Tue Jun 17 2008 Thierry Vignaud <tv@mandriva.org> 0.0.9-7mdv2009.0
++ Revision: 223261
+- rebuild
+
+* Tue Mar 04 2008 Oden Eriksson <oeriksson@mandriva.com> 0.0.9-6mdv2008.1
++ Revision: 179021
+- rebuild
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+    - kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Thu Aug 30 2007 Oden Eriksson <oeriksson@mandriva.com> 0.0.9-3mdv2008.0
++ Revision: 75345
+- fix deps (pixel)
+
+* Thu Aug 16 2007 Oden Eriksson <oeriksson@mandriva.com> 0.0.9-2mdv2008.0
++ Revision: 64164
+- use the new System/Printing RPM GROUP
+
+* Sun Aug 12 2007 Oden Eriksson <oeriksson@mandriva.com> 0.0.9-1mdv2008.0
++ Revision: 62288
+- Import min12xxw
+
+
+
+* Sun Aug 12 2007 Oden Eriksson <oeriksson@mandriva.com> 0.0.9-1mdv2008.0
+- initial Mandriva package
