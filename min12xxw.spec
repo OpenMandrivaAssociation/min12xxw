@@ -1,3 +1,5 @@
+%define _disable_rebuild_configure 1
+
 Summary:	A printer filter for Minolta 1[234]xx W printers
 Name:		min12xxw
 Version:	0.0.9
@@ -24,7 +26,7 @@ ghostscript to the printer language of Minolta 1[234]xx W printers.
 %make
 
 %install
-%makeinstall_std
+make install DESTDIR=%{buildroot}
 
 %files
 %doc AUTHORS COPYING ChangeLog FAQ NEWS README format.txt
