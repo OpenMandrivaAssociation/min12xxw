@@ -6,7 +6,7 @@ Version:	0.0.9
 Release:	29
 License:	GPLv2
 Group:		System/Printing
-Url:		http://www.hinterbergen.de/mala/min12xxw/
+Url:		https://www.hinterbergen.de/mala/min12xxw/
 Source0:	http://www.hinterbergen.de/mala/min12xxw/%{name}-%{version}.tar.gz
 Patch0:		min12xxw-0.0.9-format_not_a_string_literal_and_no_format_arguments.diff
 BuildRequires:	gettext-devel
